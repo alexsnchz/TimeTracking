@@ -47,3 +47,16 @@ bower.json
 # Ignore node_modules
 node_modules/
 
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore IDE's settings.
+/.idea
+/nbproject
+
+# Ignore rails best practices html.
+rails_best_practices_output.html
+
+# Ignore local ruby version
+.ruby-version
