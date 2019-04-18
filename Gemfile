@@ -92,3 +92,6 @@ gem 'font-awesome-sass', '~> 5.8.1'
 
 # Slim templates generator for Rails 3, 4 and 5
 gem "slim-rails", '~> 3.2.0'
+
+# Flexible authentication solution for Rails with Warden.
+gem 'devise', '~> 4.6.2'
