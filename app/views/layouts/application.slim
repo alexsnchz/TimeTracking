@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title TimeTracking
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.fixed-header.menu-pin.menu-behind
+    /! BEGIN SIDEBAR
+    = render 'layouts/sidebar'
+
+    /! START PAGE-CONTAINER
+    .page-container
+
+      /! START HEADER
+      = render 'layouts/header'
+
+      /! START PAGE CONTENT WRAPPER
+      .page-content-wrapper
+        /! START PAGE CONTENT
+        .content
+          /! START JUMBOTRON
+          .jumbotron data-pages="parallax"
+            .container-fluid.container-fixed-lg.sm-p-l-0.sm-p-r-0
+              .inner
+                /! START BREADCRUMB
+                ol.breadcrumb
+                  li.breadcrumb-item
+                    a href="#"  Barebone
+                  li.breadcrumb-item.active Layout
+
+          /! START CONTAINER FLUID
+          .container-fluid.container-fixed-lg
+            /! BEGIN PlACE PAGE CONTENT HERE
+            = yield
+
+        /! START FOOTER
+        = render 'layouts/footer'
