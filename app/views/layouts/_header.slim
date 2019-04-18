@@ -1,0 +1,22 @@
+.header.light.bg-white
+  /! START MOBILE SIDEBAR TOGGLE
+  a.btn-link.toggle-sidebar.d-lg-none.pg.pg-menu data-toggle="sidebar" href="#"
+  div
+    .brand.inline
+      = image_tag 'logo.png', alt: 'logo', height: 22, width: 78, data: { src: image_path('logo.png'), 'src-retina': image_path('logo_2x.png') }
+  .d-flex.align-items-center
+    /! START User Info
+    .pull-left.p-r-10.fs-14.font-heading.d-lg-inline-block.d-none.m-l-20
+      span.semi-bold Username
+    .dropdown.pull-right.d-lg-inline-block.d-none
+      button.profile-dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+        span.thumbnail-wrapper.d32.circular.inline.bg-master-light
+          = icon('fas', 'user')
+      .dropdown-menu.dropdown-menu-right.profile-dropdown role="menu"
+        a.dropdown-item href="#"
+          i.pg-settings_small
+          | Settings
+        a.clearfix.bg-master-lighter.dropdown-item href="#"
+          span.pull-left Logout
+          span.pull-right
+            i.pg-power

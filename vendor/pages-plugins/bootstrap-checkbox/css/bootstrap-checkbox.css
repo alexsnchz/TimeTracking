@@ -207,7 +207,7 @@ table th .checkbox label {
 }
 
 .star label:before {
-	font-family: 'FontAwesome';	
+	font-family: 'Font Awesome 5 Free';
 	content: "\F005";
 	display: inline-block;
 	margin-right: 10px;
@@ -274,7 +274,7 @@ table th .checkbox label {
 }
 
 .checkbox input[type=checkbox]:checked + label::after  {
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Free';
 	content: "\F00C";
 }
 .checkbox input[type=checkbox]:checked + label{

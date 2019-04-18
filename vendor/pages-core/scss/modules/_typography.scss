@@ -158,7 +158,7 @@ blockquote {
     border-left:0;
     &:before{
         content: '';
-        font-family: FontAwesome;
+        font-family: 'Font Awesome 5 Free';
         content: "\f10d";
         margin-right: 13px;
         float: left;
@@ -179,7 +179,7 @@ blockquote {
         &:before{
             float: right;
             content: '';
-            font-family: FontAwesome;
+            font-family: 'Font Awesome 5 Free';
             content: "\f10d";
             margin-left: 13px;
             margin-right: 0;

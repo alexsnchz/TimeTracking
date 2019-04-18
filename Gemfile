@@ -25,6 +25,9 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '~> 4.3.3'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
@@ -80,3 +83,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Bootstrap 4 rubygem for Rails / Sprockets / Hanami / etc
+gem 'bootstrap', '~> 4.3.1'
+
+# Font-Awesome Sass gem for use in Ruby/Rails projects
+gem 'font-awesome-sass', '~> 5.8.1'
+
+# Slim templates generator for Rails 3, 4 and 5
+gem "slim-rails", '~> 3.2.0'

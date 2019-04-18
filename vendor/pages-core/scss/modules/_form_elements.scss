@@ -356,7 +356,7 @@ input[type=radio]:checked + label:before{
                 border-width: 8.5px;
             }
             &::after {
-                font-family:'FontAwesome';
+                font-family:'Font Awesome 5 Free';
                 content:"\F00C";
                 color: #fff;
             }
@@ -393,7 +393,7 @@ input[type=radio]:checked + label:before{
                 position: relative;
                 // margin-right: 0;
                 &::after {
-                    font-family:'FontAwesome';
+                    font-family:'Font Awesome 5 Free';
                     content:"\F00C";
                     position: absolute;
                     right: -27px;
@@ -959,7 +959,7 @@ https://github.com/eternicode/bootstrap-datepicker
                 font-size: 0px;
                 &:before {
                     color:  $color-primary;
-                    font-family:'FontAwesome';
+                    font-family:'Font Awesome 5 Free';
                     font-size: 10px;
                 }
             }
@@ -2063,7 +2063,7 @@ div.cs-skin-slide{
     & > span:after,
     &.cs-active > span:after{
         content:"\f0d7";
-        font-family: FontAwesome;
+        font-family: 'Font Awesome 5 Free';
         color: #5e5e5e;
     }
     .cs-options{

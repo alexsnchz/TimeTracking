@@ -220,7 +220,7 @@ body{
                             float: right;
                             display: inline;
                             font-size: 16px;
-                            font-family: FontAwesome;
+                            font-family: 'Font Awesome 5 Free';
                             height: auto;
                             content: "\f104";
                             font-weight: 300;
@@ -297,7 +297,7 @@ body{
                                         margin-right: 20px;
                                         display: inline;
                                         font-size: 16px;
-                                        font-family: FontAwesome;
+                                        font-family: 'Font Awesome 5 Free';
                                         height: auto;
                                         content: "\f104";
                                         font-weight: 300;
@@ -310,7 +310,7 @@ body{
                                             margin-top: 1px;
                                             margin-right: 18px;
                                             display: inline;
-                                            font-family: FontAwesome;
+                                            font-family: 'Font Awesome 5 Free';
                                             height: auto;
                                             font-size: 16px;
                                             @include rotate(-90deg);

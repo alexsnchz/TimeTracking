@@ -15,5 +15,8 @@ module TimeTracking
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Custom assets paths
+    config.assets.paths << File.join(Rails.root, '/vendor')
   end
 end

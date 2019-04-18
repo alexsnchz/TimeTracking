@@ -11,4 +11,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+Rails.application.config.assets.precompile += %w[*.svg *.eot *.woff *.js *.ttf *.gif *.png *.jpg]
+
+# Don't fallback to assets pipeline if a precompiled asset is missed
+Rails.application.config.assets.compile = true
