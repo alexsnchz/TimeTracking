@@ -11,14 +11,13 @@ nav.page-sidebar data-pages="sidebar"
     /! BEGIN SIDEBAR MENU ITEMS
     ul.menu-items
       li.m-t-30
-        a.detailed href="#"
-          span.title Page 1
-          span.details 234 notifications
+        = link_to authenticated_root_path do
+          span.title Dashboard
         span.icon-thumbnail
-          i data-feather="shield"
+          = icon "fas", "tachometer-alt "
       li
-        a href="#"
-          span.title Page 2
+        = link_to user_registrations_path do
+          span.title Users
         span.icon-thumbnail
-          i data-feather="list"
+          = icon "fas", "users"
     .clearfix

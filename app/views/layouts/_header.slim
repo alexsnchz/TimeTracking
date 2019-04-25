@@ -7,16 +7,16 @@
   .d-flex.align-items-center
     /! START User Info
     .pull-left.p-r-10.fs-14.font-heading.d-lg-inline-block.d-none.m-l-20
-      span.semi-bold Username
+      span.semi-bold = current_user.email
     .dropdown.pull-right.d-lg-inline-block.d-none
       button.profile-dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
         span.thumbnail-wrapper.d32.circular.inline.bg-master-light
           = icon('fas', 'user')
       .dropdown-menu.dropdown-menu-right.profile-dropdown role="menu"
-        a.dropdown-item href="#"
+        a.dropdown-item href="javascript:;"
           i.pg-settings_small
           | Settings
-        a.clearfix.bg-master-lighter.dropdown-item href="#"
+        = link_to destroy_user_session_path, class: 'clearfix bg-master-lighter dropdown-item', method: :delete do
           span.pull-left Logout
           span.pull-right
             i.pg-power

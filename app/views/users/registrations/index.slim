@@ -1,0 +1,16 @@
+.card
+  .card-header.d-flex.justify-content-between
+    .card-title
+      | Users
+    .export-options-container
+  .card-body
+    table.table.table-striped
+      thead
+        tr
+          th ID
+          th Email
+      tbody
+        - @users.each do |user|
+          tr
+            td.v-align-middle = user.id
+            td.v-align-middle = user.email

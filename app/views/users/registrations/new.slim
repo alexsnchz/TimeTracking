@@ -1,0 +1,23 @@
+.register-container.full-height.sm-p-t-30
+  .d-flex.justify-content-center.flex-column.full-height
+    = image_tag 'logo.png', alt: 'logo', height: 22, width: 78, data: { src: image_path('logo.png'), 'src-retina': image_path('logo_2x.png') }
+    h4 Sign up
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), class: 'p-t-15') do |f|
+      .row
+        .col-md-12
+          .form-group.form-group-default
+            = f.label :email
+            = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
+      .row
+        .col-md-6
+          .form-group.form-group-default
+            = f.label :password
+            = f.password_field :password, autocomplete: "new-password", class: "form-control"
+        .col-md-6
+          .form-group.form-group-default
+            = f.label :password_confirmation
+            = f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control"
+      .row.m-t-10
+        .col-lg-12.text-right.col-lg-offset-6
+          = link_to "Log in", new_session_path(resource_name)
+      = f.submit "Create a new account", class: "btn btn-primary btn-cons m-t-10"
