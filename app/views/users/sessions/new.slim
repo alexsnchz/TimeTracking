@@ -1,0 +1,30 @@
+.login-wrapper
+  .bg-pic
+  .login-container.bg-white
+    .p-l-50.m-l-20.p-r-50.m-r-20.p-t-50.m-t-30.sm-p-l-15.sm-p-r-15.sm-p-t-40
+      = image_tag 'logo.png', alt: 'logo', height: 22, width: 78, data: { src: image_path('logo.png'), 'src-retina': image_path('logo_2x.png') }
+      p.p-t-35 Sign into your account
+      /! START Login Form
+      = form_for(resource, as: resource_name, url: session_path(resource_name), class: 'p-t-15') do |f|
+        /! START Form Control
+        .form-group.form-group-default
+          = f.label :email
+          .controls
+            = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+        /! END Form Control
+        /! START Form Control
+        .form-group.form-group-default
+          = f.label :password
+          .controls
+            = f.password_field :password, autocomplete: "current-password", class: 'form-control'
+        /! START Form Control
+        - if devise_mapping.rememberable?
+          .row
+            .col-md-6.no-padding.sm-p-l-10
+              .checkbox
+                = f.check_box :remember_me
+                = f.label :remember_me
+            .col-md-6.d-flex.align-items-center.justify-content-end
+              = link_to "Sign up", new_registration_path(resource_name)
+        /! END Form Control
+        = f.submit "Sign in", class: 'btn btn-primary btn-cons m-t-10'

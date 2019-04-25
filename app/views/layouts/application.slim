@@ -23,17 +23,17 @@ html
         /! START PAGE CONTENT
         .content
           /! START JUMBOTRON
-          .jumbotron data-pages="parallax"
-            .container-fluid.container-fixed-lg.sm-p-l-0.sm-p-r-0
+          div data-pages="parallax"
+            .container-fluid.p-l-25.p-r-25.sm-p-l-0.sm-p-r-0
               .inner
                 /! START BREADCRUMB
                 ol.breadcrumb
                   li.breadcrumb-item
-                    a href="#"  Barebone
-                  li.breadcrumb-item.active Layout
+                    a href="#"  Home
+                  li.breadcrumb-item.active View
 
           /! START CONTAINER FLUID
-          .container-fluid.container-fixed-lg
+          .container-fluid.p-l-25.p-r-25.p-t-0.p-b-25.sm-padding-10
             /! BEGIN PlACE PAGE CONTENT HERE
             = yield
 
