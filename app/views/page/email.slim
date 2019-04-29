@@ -1,0 +1,114 @@
+/! START APP
+/! START SECONDARY SIDEBAR MENU
+nav.secondary-sidebar.light
+  .m-b-30.m-l-30.m-r-30.d-sm-none.d-md-block.d-lg-block.d-xl-block
+    a.btn.btn-primary.btn-block.btn-compose href="email_compose.html"  Compose
+  p.menu-title BROWSE
+  ul.main-menu
+    li.active
+      a href="#"
+        span.title
+          i.pg-inbox
+          | Inbox
+        span.badge.pull-right
+    li
+      a href="#"
+        span.title
+          i.pg-folder
+          | All mail
+      ul.sub-menu.no-padding
+        li
+          a href="#"
+            span.title Important
+        li
+          a href="#"
+            span.title Labeled
+    li
+      a href="#"
+        span.title
+          i.pg-sent
+          | Sent
+    li
+      a href="#"
+        span.title
+          i.pg-spam
+          | Spam
+        span.badge.pull-right
+  p.menu-title.m-t-20.all-caps Quick view
+  ul.sub-menu.no-padding
+    li
+      a href="#"
+        span.title Documents
+    li
+      a href="#"
+        span.title Flagged
+        span.badge.pull-right
+    li
+      a href="#"
+        span.title Images
+/! END SECONDARY SIDEBAR MENU
+.inner-content.full-height
+  .split-view
+    /! START SPLIT LIST VIEW
+    .split-list
+      a.list-refresh href="#"
+        i.fa.fa-refresh
+      .boreded.no-top-border data-email="list"
+    /! START EMAIL LIST SORTED BY DATE
+    /! END EMAIL LIST SORTED BY DATE
+    /! END SPLIT LIST VIEW
+    /! START SPLIT DETAILS
+    .split-details data-email="opened"
+      .no-result
+        h1 No email has been selected
+      .email-content-wrapper style="display:none"
+        .actions-wrapper.menuclipper.bg-master-lightest
+          ul.actions.menuclipper-menu.no-margin.p-l-20
+            li.d-lg-none.d-xl-none.sm-no-padding
+              a.split-list-toggle href="#"
+                i.fa.fa-angle-left
+                | All Inboxes
+            li.no-padding
+              a.text-info href="#"  Reply
+            li.no-padding
+              a href="#"  Reply all
+            li.no-padding
+              a href="#"  Forward
+            li.no-padding
+              a href="#"  Mark as read
+            li.no-padding
+              a.text-danger href="#"  Delete
+          .clearfix
+        .email-content
+          .email-content-header
+            .thumbnail-wrapper.d48.circular.bordered
+              img alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" height="40" src="assets/img/profiles/avatar2x.jpg" width="40" /
+            .sender.inline.m-l-10
+              p.name.no-margin.bold
+              p.datetime.no-margin
+            .clearfix
+            .subject.m-t-20.m-b-20.semi-bold
+            .fromto
+              .pull-left
+                .btn-group.dropdown-default
+                  a.btn.dropdown-toggle.btn-small.btn-rounded data-toggle="dropdown" href="#"
+                    | David Nester
+                  .dropdown-menu
+                    a.dropdown-item href="#"  Action
+                    a.dropdown-item href="#"  Friend
+                    a.dropdown-item href="#"  Report
+                label.inline
+                  span.muted &nbsp;&nbsp;to
+                  span.small-text johnsmith@skyace.com
+          .clearfix
+          .email-content-body.m-t-20
+          .wysiwyg5-wrapper.b-a.b-grey.m-t-30
+            textarea.email-reply placeholder="Reply"
+    /! END SPLIT DETAILS
+    /! START COMPOSE BUTTON FOR TABS
+    .compose-wrapper.d-md-none
+      a.compose-email.text-info.pull-right.m-r-10.m-t-10 href="email_compose.html"
+        i.fa.fa-pencil-square-o
+
+= content_for :javascript do
+  = javascript_include_tag 'pages-core/js/pages.email', 'data-turbolinks-track': 'reload'

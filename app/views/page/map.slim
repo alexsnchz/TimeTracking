@@ -1,0 +1,7 @@
+/! Map
+.map-container.full-width.full-height
+  #google-map.full-width.full-height
+
+= content_for :javascript do
+    = javascript_include_tag "google_map"
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyDV5Hzm3tjSMVquPIUfy3GTJv1OLZXJOVI&callback=initMap"

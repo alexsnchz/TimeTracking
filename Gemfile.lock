@@ -260,7 +260,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate
+  annotate (~> 2.7.4)
   better_errors
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.3.1)

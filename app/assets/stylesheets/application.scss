@@ -15,6 +15,11 @@
  * BEGIN VENDOR CSS FOR PAGES
  *= require pages-plugins/pace/pace-theme-flash
  *= require pages-plugins/jquery-scrollbar/jquery.scrollbar
+ *= require pages-plugins/select2/css/select2.min
+ *= require pages-plugins/switchery/css/switchery.min
+ *= require pages-plugins/codrops-stepsform/css/component
+ *= require pages-plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min
+ *= require pages-plugins/jquery-menuclipper/jquery.menuclipper
  *
  * BEGIN CORE TEMPLATE CSS
  *= require pages-core/scss/pages-icons

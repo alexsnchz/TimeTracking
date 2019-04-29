@@ -1,9 +1,12 @@
-.header.light.bg-white
+.header.light
   /! START MOBILE SIDEBAR TOGGLE
   a.btn-link.toggle-sidebar.d-lg-none.pg.pg-menu data-toggle="sidebar" href="#"
   div
     .brand.inline
       = image_tag 'logo.png', alt: 'logo', height: 22, width: 78, data: { src: image_path('logo.png'), 'src-retina': image_path('logo_2x.png') }
+    = link_to 'Home', home_page_path, class: 'btn btn-link text-primary m-l-20 d-none d-lg-inline-block d-xl-inline-block'
+    = link_to 'Email', email_page_path, class: 'btn btn-link text-primary m-l-20 d-none d-lg-inline-block d-xl-inline-block'
+    = link_to 'Map', map_page_path, class: 'btn btn-link text-primary m-l-20 d-none d-lg-inline-block d-xl-inline-block'
   .d-flex.align-items-center
     /! START User Info
     .pull-left.p-r-10.fs-14.font-heading.d-lg-inline-block.d-none.m-l-20

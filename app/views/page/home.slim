@@ -1,0 +1,323 @@
+.social-wrapper
+  .social data-pages="social"
+    /! START JUMBOTRON
+    .jumbotron data-pages="parallax" data-social="cover"
+      .cover-photo
+        = image_tag 'cover', alt: 'cover'
+      .container-fluid.container-fixed-lg.sm-p-l-0.sm-p-r-0
+        .inner
+          .pull-bottom.bottom-left.m-b-40.sm-p-l-15
+            h5.text-white.no-margin welcome
+            h1.text-white.no-margin
+              span.semi-bold Home view
+    /! END JUMBOTRON
+    .container-fluid.container-fixed-lg.sm-p-l-0.sm-p-r-0
+      .feed
+        /! START DAY
+        .day data-social="day"
+          /! START ITEM
+          .card.no-border.bg-transparent.full-width data-social="item"
+            /! START CONTAINER FLUID
+            .container-fluid.p-t-30.p-b-30
+              .row
+                .col-lg-4
+                  .container-xs-height
+                    .row-xs-height
+                      .social-user-profile.col-xs-height.text-center.col-top
+                        .thumbnail-wrapper.d48.circular.bordered.b-white
+                          = image_tag 'profiles/f2x', height: 55, width: 55, alt: 'Avatar', data: { src: image_path('profiles/f2x'), 'src-retina': image_tag('profiles/f2x') }
+                        br/
+                        i.fa.fa-check-circle.text-success.fs-16.m-t-10
+                      .col-xs-height.p-l-20
+                        h3.no-margin.p-b-5 David Nester
+                        p.no-margin.fs-16
+                          | is excited about the new pages design framework
+                        p.hint-text.m-t-5.small
+                          | San Fransisco Bay | CEO at Pages.inc
+                .col-lg-4
+                  p.no-margin.fs-16 Hi My Name is David Nester, &amp; heres my new pages user profile page
+                  p.hint-text.m-t-5.small I love reading people's about page especially those who are in the same industry as me.
+                .col-lg-4
+                  p.m-b-5.small 1,435 Mutual Friends
+                  ul.list-unstyled
+                    li.m-r-10
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/1.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/1.jpg'), 'src-retina': image_tag('profiles/1x') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/2.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/2.jpg'), 'src-retina': image_tag('profiles/2x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/3.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/3.jpg'), 'src-retina': image_tag('profiles/3x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/4.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/4.jpg'), 'src-retina': image_tag('profiles/4x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/5.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/5.jpg'), 'src-retina': image_tag('profiles/5x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/6.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/6.jpg'), 'src-retina': image_tag('profiles/6x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white.m-r-5.b-a.b-white
+                        = image_tag 'profiles/7.jpg', height: 35, width: 35, alt: 'Profile', data: { src: image_path('profiles/7.jpg'), 'src-retina': image_tag('profiles/7x.jpg') }
+                    li
+                      .thumbnail-wrapper.d32.circular.b-white
+                        .bg-master.text-center.text-white
+                          span +34
+                  br
+                  p.m-t-5.small More friends
+          /! END CONTAINER FLUID
+          /! END ITEM
+          /! START ITEM
+          .card.social-card.col2.padding-20 data-social="item"
+            form.simform.no-margin autocomplete="off" data-social="status"
+              .status-form-inner
+                ol.questions
+                  li
+                    span
+                      label for="status-q1"  What's on your mind?
+                    input#status-q1 name="q1" type="text"
+                  li
+                    span
+                      label for="status-q2"  What are you feeling?
+                    input#status-q2 name="q2" type="text"
+                  li
+                    span
+                      label for="status-q3"  What's your location?
+                    input#status-q3 name="q3" type="text"
+                  li
+                    span
+                      label for="status-q4"  Who are you with?
+                    input#status-q4 name="q4" type="text"
+                button.submit type="submit"  Send answers
+                .controls
+                  button.next
+                  .progress
+                  span.number
+                    span.number-current
+                    span.number-total
+                  span.error-message
+              span.final-message
+          /! START ITEM
+          .card.social-card.status.col2 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            h5
+              | David Nester updated his status
+              span.hint-text few seconds ago
+            h2 Earned my first salary bonus for the best design of the year award.
+            ul.reactions
+              li
+                a href="#"
+                  | 5,345
+                  =< icon 'far', 'comment'
+
+              li
+                a href="#"
+                  | 23K
+                  =< icon 'far', 'heart'
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-header.clearfix
+              .user-pic
+                = image_tag 'profiles/5.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/5.jpg'), 'src-retina': image_tag('profiles/5x.jpg') }
+              h5 Shannon Williams
+              h6
+                | Shared a photo
+                span.location.semi-bold
+                  =< icon 'fas', 'map-marker-alt'
+                  |  NYC, New York
+            .card-description
+              p Inspired by : good design is obvious, great design is transparent
+              .via via themeforest
+            .card-content
+              ul.buttons
+                li
+                  a href="#"
+                    = icon 'fas', 'expand-arrows-alt'
+                li
+                  a href="#"
+                    = icon 'far', 'heart-o'
+              = image_tag 'social-post-image.png'
+            .card-footer.clearfix
+              .time few seconds ago
+              ul.reactions
+                li
+                  a href="#"
+                    | 5,345
+                    =< icon 'far', 'comment'
+                li
+                  a href="#"
+                    | 23K
+                    =< icon 'far', 'heart'
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-header.clearfix
+              .user-pic
+                = image_tag 'profiles/8.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/8.jpg'), 'src-retina': image_tag('profiles/8x.jpg') }
+              h5 Jeff Curtis
+              h6
+                | Shared a Tweet
+                span.location.semi-bold
+                  =< icon 'fas', 'map-marker-alt'
+                  | SF, California
+            .card-description
+              p
+                | What you think, you become. What you feel, you attract. What you imagine, you create - Buddha.
+                a href="#"  #quote
+              .via via Twitter
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-header.clearfix
+              .user-pic
+                = image_tag 'profiles/4.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/4.jpg'), 'src-retina': image_tag('profiles/4x.jpg') }
+              h5 Andy Young
+              h6
+                | Updated his status
+                span.location.semi-bold
+                  =< icon 'fas', 'map-marker-alt'
+                  |  NYC, New York
+            .card-description
+              p What a lovely day! I think I should go and play outside.
+          /! START ITEM
+          .card.social-card.share.share-other.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-content
+              ul.buttons
+                li
+                  a href="#"
+                    = icon 'fas', 'expand'
+                li
+                  a href="#"
+                    = icon 'far', 'heart-o'
+              = image_tag 'quote.jpg', alt: 'quote'
+            .card-description
+              p Like if you agree
+            .card-footer.clearfix
+              .time few seconds ago
+              ul.reactions
+                li
+                  a href="#"
+                    | 5,345
+                    =< icon 'far', 'comment-o'
+                li
+                  a href="#"
+                    | 23K
+                    =< icon 'far', 'heart-o'
+            .card-header.clearfix.last
+              .user-pic
+                = image_tag 'profiles/7.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/7.jpg'), 'src-retina': image_tag('profiles/7x.jpg') }
+              h5 Tracy Brooks
+              h6 Shared a photo on your wall
+          /! START ITEM
+          .card.social-card.share.share-other.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-content
+              ul.buttons
+                li
+                  a href="#"
+                    = icon 'fas', 'expand'
+                li
+                  a href="#"
+                    = icon 'far', 'heart-o'
+              = image_tag 'person-2.jpg', alt: 'Person'
+            .card-description
+              p
+                a href="#"  #TBT :D
+            .card-footer.clearfix
+              .time few seconds ago
+              ul.reactions
+                li
+                  a href="#"
+                    | 5,345
+                    =< icon 'far', 'comment-o'
+                li
+                  a href="#"
+                    | 23K
+                    =< icon 'far', 'heart-o'
+            .card-header.clearfix.last
+              .user-pic
+                = image_tag 'profiles/bc.jpg', height: 33, width: 33, alt: 'Profile', data: {src: image_path('profiles/bc.jpg'), 'src-retina': image_tag('profiles/bc2x.jpg')}
+              h5 David Nester
+              h6 Shared a link on your wall
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-header.clearfix
+              .user-pic
+                = image_tag 'profiles/6.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/6.jpg'), 'src-retina': image_tag('profiles/6x.jpg') }
+              h5 Nathaniel Hamilton
+              h6
+                | Shared a Tweet
+                span.location.semi-bold
+                  =< icon 'fas', 'map-marker-alt'
+                  |  NYC, New York
+            .card-description
+              p Testing can show the presense of bugs, but not their absence.
+              .via via Twitter
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .circle data-container="body" data-toggle="tooltip" title="Label"
+            .card-header.clearfix
+              .user-pic
+                = image_tag 'profiles/6.jpg', height: 33, width: 33, alt: 'Profile', data: { src: image_path('profiles/6.jpg'), 'src-retina': image_tag('profiles/6x.jpg') }
+              h5 Nathaniel Hamilton
+              h6
+                | Shared a Tweet
+                span.location.semi-bold
+                  =< icon 'fas', 'map-marker-alt'
+                  |  NYC, New York
+            .card-description
+              p
+                | There is nothing new under the sun, but there are lots of old things we don't know yet.
+              .via via Twitter
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .card-header
+              h5.text-complete.pull-left.fs-12
+                | News
+                =< icon 'fas', 'circle', class: 'text-complete fs-11'
+              .pull-right.small.hint-text
+                | 5,345
+                =< icon 'fas', 'comment-o'
+              .clearfix
+            .card-description
+              h3 Ebola outbreak: Clinical drug trials to start next month as death toll mounts
+            .card-footer.clearfix
+              .pull-left
+                | via
+                span.text-complete CNN
+              .pull-right.hint-text
+                | Apr 23
+              .clearfix
+          /! START ITEM
+          .card.social-card.share.col1 data-social="item"
+            .card-header.clearfix
+              h5.text-success.pull-left.fs-12
+                | Stock Market
+                =< icon 'fas', 'circle', class: 'text-success fs-11'
+              .pull-right.small.hint-text
+                | 5,345
+                =< icon 'fas', 'comment-o'
+              .clearfix
+            .card-description
+              h5.hint-text.no-margin Apple Inc.
+              h5.small.hint-text.no-margin NASDAQ: AAPL - Nov 13 8:37 AM ET
+              h3
+                | 111.25
+                span.text-success
+                  =< icon 'fas', 'sort-up', class: 'text-success'
+                  |  0.15 (0.13%)
+            .card-footer.clearfix
+              .pull-left
+                | by
+                span.text-success John Smith
+              .pull-right.hint-text
+                | Apr 23
+              .clearfix
+
+= content_for :javascript do
+  = javascript_include_tag 'pages-core/js/pages.social', 'data-turbolinks-eval': 'true'
