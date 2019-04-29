@@ -70,7 +70,7 @@ group :development do
   gem 'better_errors'
 
   # Annotates Rails/ActiveRecord Models, routes, fixtures, and others based on the database schema.
-  gem 'annotate'
+  gem 'annotate', '~> 2.7.4'
 end
 
 group :test do

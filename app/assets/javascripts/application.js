@@ -27,6 +27,16 @@
 //= require pages-plugins/jquery-actual/jquery.actual.min
 //= require pages-plugins/jquery-scrollbar/jquery.scrollbar.min
 //= require pages-plugins/bootstrap-collapse/bootstrap-tabcollapse.js
+//= require pages-plugins/interactjs/interact.min
+//= require pages-plugins/moment/moment-with-locales.min
+//= require pages-plugins/select2/js/select2.full.min
+//= require pages-plugins/classie/classie
+//= require pages-plugins/switchery/js/switchery.min
+//= require pages-plugins/imagesloaded/imagesloaded.pkgd.min
+//= require pages-plugins/jquery-isotope/isotope.pkgd.min
+//= require pages-plugins/codrops-stepsform/js/stepsForm
+//= require pages-plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min
+//= require pages-plugins/jquery-menuclipper/jquery.menuclipper
 
 // BEGIN CORE TEMPLATE JS
 //= require pages-core/js/pages

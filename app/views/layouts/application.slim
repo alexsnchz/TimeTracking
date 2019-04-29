@@ -6,9 +6,9 @@ html
     = csp_meta_tag
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': false
 
-  body.fixed-header.menu-pin.menu-behind
+  body.fixed-header.dashboard.menu-pin
     /! BEGIN SIDEBAR
     = render 'layouts/sidebar'
 
@@ -19,9 +19,9 @@ html
       = render 'layouts/header'
 
       /! START PAGE CONTENT WRAPPER
-      .page-content-wrapper
+      .page-content-wrapper.full-height
         /! START PAGE CONTENT
-        .content
+        .content.sm-gutter.full-height
           /! START JUMBOTRON
           div data-pages="parallax"
             .container-fluid.p-l-25.p-r-25.sm-p-l-0.sm-p-r-0
@@ -33,9 +33,11 @@ html
                   li.breadcrumb-item.active View
 
           /! START CONTAINER FLUID
-          .container-fluid.p-l-25.p-r-25.p-t-0.p-b-25.sm-padding-10
+          .container-fluid.p-l-25.p-r-25.p-t-0.p-b-25.sm-padding-10.full-height
             /! BEGIN PlACE PAGE CONTENT HERE
             = yield
 
         /! START FOOTER
         = render 'layouts/footer'
+
+    = yield :javascript

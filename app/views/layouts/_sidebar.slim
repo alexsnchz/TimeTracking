@@ -4,7 +4,7 @@ nav.page-sidebar data-pages="sidebar"
 
   /! BEGIN SIDEBAR MENU HEADER
   .sidebar-header
-    img.brand alt="logo" data-src="assets/img/logo_blue.png" data-src-retina="assets/img/logo_blue_2x.png" height="22" src="assets/img/logo_blue.png" width="78" /
+    = image_tag 'logo.png', alt: 'logo', height: 22, width: 78, data: { src: image_path('logo.png'), 'src-retina': image_path('logo_2x.png') }
 
   /! START SIDEBAR MENU
   .sidebar-menu

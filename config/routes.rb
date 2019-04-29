@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'page/home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   devise_for :users,
              controllers: {
@@ -26,6 +27,12 @@ Rails.application.routes.draw do
     authenticate :user do
       # Shows all users.
       get '/users', to: 'users/registrations#index', as: :user_registrations
+
+      controller :page do
+        get 'home', as: :home_page
+        get 'email', as: :email_page
+        get 'map', as: :map_page
+      end
     end
   end
 end
