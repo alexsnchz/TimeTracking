@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  controller: MyString
+  action: MyString
+  tracking: false
+
+two:
+  controller: MyString
+  action: MyString
+  tracking: false
